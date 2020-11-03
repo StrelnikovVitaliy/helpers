@@ -1,0 +1,12 @@
+//Selector string
+//Func what to run
+
+function waitForElement(selector, func) {
+    const interval = setInterval(() => {
+        const elem = document.querySelector(selector);
+        if (elem !== null) {
+            func(elem);
+            clearInterval(interval);
+        }
+    }, 100);
+}
