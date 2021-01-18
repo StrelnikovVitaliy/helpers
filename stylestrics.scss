@@ -1,0 +1,13 @@
+.ellipsisInFlex {
+  span:last-of-type {
+    flex: 1 1 100%;
+    min-width: 0;
+    div {
+      width: 100%;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
